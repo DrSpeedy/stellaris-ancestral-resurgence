@@ -1,7 +1,7 @@
 # Stellaris: Ancestral Resurgence (WIP)
 
 ## Summary:
-As the player takes control of the remnants of the fallen empire in your Stellaris mod, they inherit a rich history of hubris and destruction. Now, with the scars of the past serving as a reminder, they must forge a new path for their species. Whether they will mend their species with technology and ascend to new heights or succumb to the same mistakes remains to be seen. It's a challenging journey of redemption, survival, and conquest in a galaxy teeming with opportunities and dangers.
+As the player takes control of the remnants of the fallen empire, they inherit a rich history of hubris and destruction. Now, with the scars of the past serving as a reminder, they must forge a new path for their species. Whether they will mend their species with technology and ascend to new heights or succumb to the same mistakes remains to be seen. It's a challenging journey of redemption, survival, and conquest in a galaxy teeming with opportunities and dangers.
 
 ## Origin:
     Post-Apocalyptic
@@ -20,22 +20,26 @@ As the player takes control of the remnants of the fallen empire in your Stellar
     Two astroid belts
     Two-Five random planets on outskirts of system
     
-## Background Story (Rough GPT draft lmao):
+## Background Story:
 
-Thousands of years ago, a once-mighty and advanced empire stood among the stars. Their technologies surpassed the imagination of all other species in the galaxy, and they wielded their power with an iron fist. But such greatness often sows the seeds of arrogance and decadence. As the eons passed, the empire became complacent, its rulers careless and detached from the realities of the universe.
+In the distant past, an ancient and powerful empire once reigned supreme across the galaxy. Its technological prowess was unmatched, and its dominion was feared by all. But as the eons passed, arrogance and complacency crept into the hearts of its rulers, blinding them to the ever-changing tides of the cosmos. Gradually, their once-mighty empire began to crumble from within.
 
-During this time of decline, the empire came across a unique blue star system, hidden amidst the vast cosmic expanse. Eager to explore the system's wonders, they dispatched a fleet led by their most esteemed scientists and admirals. What they discovered was both awe-inspiring and terrifying.
+Unknown to the rest of the galaxy, a shadowy cabal within the empire's inner circle plotted to seize ultimate power and transcend the limitations of their organic forms. They sought to merge their very essence with technology, believing that by doing so, they would ascend to a higher plane of existence. Alas, their reckless pursuit of this unfathomable goal led to catastrophic consequences.
 
-Within the system, they found not one but three tomb worlds, scorched by past cataclysms that rendered them inhospitable to most life forms. These planets bore witness to ancient, forgotten civilizations, obliterated by some unknown force. Their discoveries intrigued the empire, but arrogance clouded their judgment, and they proceeded recklessly.
+A terrible internal conflict, known as the Ascendant Schism, erupted within the heart of the empire. It tore apart worlds, annihilated fleets, and shattered entire star systems. As the conflict reached its apocalyptic zenith, the once-great civilization was reduced to ashes, leaving behind only remnants of its former glory scattered across the cosmos.
 
-In the heart of the system lay a once-majestic planet, now reduced to a desolate and lifeless husk. Its surface bore scars of colossal battles, suggesting an apocalypse of untold proportions. The empire, ever hungry for knowledge and new technologies, dispatched teams to delve into the planet's ruins. However, their insatiable thirst for power blinded them to the dangers that lay dormant beneath the shattered surface.
+Your species, the last survivors of this fallen empire, were once servants of this cabal. Endowed with advanced knowledge and technology, you were engineered to serve your masters' insatiable thirst for power. But as the empire crumbled, you managed to break free from the shackles of your creators and escape to the far reaches of space.
 
-Unleashed by their careless hands, ancient machines of unimaginable power awoke, unleashing devastation upon the empire. The glorious fleets were decimated, planets laid to waste, and entire solar systems were plunged into chaos. A cataclysmic battle unfolded that spanned across the galaxy, and in the end, the once-proud empire was brought to its knees.
+## Your Journey:
 
-The remnants of this fallen civilization, who survived the onslaught, retreated to the blue star system where their downfall began. They vowed never to forget the mistakes of their past and embraced a militaristic, xenophobic ideology. Fearful of outsiders, they closed their borders, guarding their newfound home with unyielding vigilance.
+Through the vastness of the galaxy, you sought refuge and discovered a remote system at the edge of known space. A trinity of desolate tomb worlds orbited a brilliant blue star, a haunting reminder of the empire's tragic past. Amidst the wreckage of a once-mighty civilization, you found a devastated ring world, a testament to the unspeakable power that once belonged to your ancestors.
 
-Despite their shattered state, the remnants held onto fragments of their past glory. They discovered a damaged Ring World surrounding one of the tomb worlds, a partially functioning Mega Shipyard, and a damaged Galactic Gateway, all remnants of the lost empire's technological prowess.
+Within this forsaken system, you also stumbled upon the remnants of a mega shipyard and a dormant galactic gateway, now ravaged by time and conflict. The mysteries contained within these structures beckoned you, fueling your desire to reclaim the technological wonders of your ancestors and forge a path to greatness once more.
 
-These shattered relics and the system's strategic location became the core of their ambition. Their ultimate goal was to ascend their species through melding flesh and steel, embracing both biologic and cybernetic advancements. This pursuit of perfection, driven by a desire to atone for the past and reach new heights, became the essence of their society.
-    A Damaged Mega Shipyard (a testament to the fallen empire's shipbuilding mastery)
-    A Damaged Galactic Gateway (an enigmatic structure that may one day be restored)
+## The Present:
+
+As millennia passed, your species adapted to the harsh conditions of the tomb worlds, becoming militaristic and fanatically xenophobic. Your survival instinct drove you to secure new technologies, always seeking the means to restore your species to its former glory. The desire to transcend the limitations of your organic forms remains a burning ambition, inspiring your pursuit of the elusive knowledge of mega engineering.
+
+With your sights set on mending the damaged ring world and reactivating the megastructures within your grasp, your empire now stands ready to reclaim its place amongst the stars. Your past may be one of ancient arrogance and cataclysmic downfall, but your future will be one of retribution, knowledge, and the ascendance of your species beyond its mortal coil.
+
+As you venture forth into the uncharted realms of the galaxy, you carry with you the burden of your ancestors' hubris and the hope of restoring your fallen empire to its rightful place in history. The galaxy awaits your presence, and your story of survival, retribution, and technological transcendence is about to be written in the stars.
