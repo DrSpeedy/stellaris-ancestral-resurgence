@@ -1,5 +1,7 @@
 # Stellaris: Ancestral Resurgence (WIP)
 
+Screenshots: [Link](https://steamcommunity.com/id/Libertatem1984/screenshots/?appid=281990&sort=newestfirst&browsefilter=myfiles&view=imagewall)
+
 ## Summary:
 As the player takes control of the remnants of the fallen empire, they inherit a rich history of hubris and destruction. Now, with the scars of the past serving as a reminder, they must forge a new path for their species. Whether they will mend their species with technology and ascend to new heights or succumb to the same mistakes remains to be seen. It's a challenging journey of redemption, survival, and conquest in a galaxy teeming with opportunities and dangers.
 
