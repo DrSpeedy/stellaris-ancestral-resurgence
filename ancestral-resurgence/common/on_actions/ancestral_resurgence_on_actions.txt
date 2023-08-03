@@ -1,7 +1,5 @@
-namespace ar_origin
-
-empire_init_add_technologies = {
+empire_init_capital_planet = {
     events = {
-        ar_origin.1
+        ancestral_resurgence.1
     }
 }
