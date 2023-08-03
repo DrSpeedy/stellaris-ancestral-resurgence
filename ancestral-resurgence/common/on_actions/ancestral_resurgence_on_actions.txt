@@ -1,0 +1,7 @@
+namespace ar_origin
+
+empire_init_add_technologies = {
+    events = {
+        ar_origin.1
+    }
+}
