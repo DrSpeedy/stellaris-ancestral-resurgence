@@ -1,12 +1,12 @@
 namespace ancestral_resurgence
 
 planet_event = {
-	id = anscestral_resurgence.1
+	id = ancestral_resurgence.1
 	is_triggered_only = yes
 	hide_window = no
-    pre_triggers = {
-        has_owner = yes
-    }
+	pre_triggers = {
+        	has_owner = yes
+    	}
 
 	immediate = {
 
