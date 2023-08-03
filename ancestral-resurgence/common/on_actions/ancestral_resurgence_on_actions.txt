@@ -1,5 +1,5 @@
 empire_init_capital_planet = {
     events = {
-        ancestral_resurgence.1
+        arorigin.1
     }
 }
