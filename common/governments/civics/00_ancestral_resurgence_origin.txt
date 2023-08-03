@@ -1,0 +1,38 @@
+origin_ancestral_resurgence = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/ancestral_resurgence.dds"
+	picture = GFX_origin_post_apocalyptic
+
+	starting_colony = pc_nuked
+	initializer = "ancestral_resurgence"
+	max_once_global = yes
+	habitability_preference = "pc_nuked"
+	flags = { ancestral_resurgence_origin }
+
+	playable = {
+		host_has_dlc = "Apocalypse"
+	}
+
+	possible = {
+		civics = {
+			NOT = { value = civic_agrarian_idyll }
+			NOR = {
+				text = civic_tooltip_not_anglers
+				value = civic_anglers
+				value = civic_corporate_anglers
+			}
+		}
+	}
+
+	description = "AR_Origin_Tooltip"
+
+	traits = {
+		trait = trait_survivor
+	}
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 4
+	}
+}
