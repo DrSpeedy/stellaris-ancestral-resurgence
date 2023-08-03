@@ -4,7 +4,7 @@ origin_ancestral_resurgence = {
 	picture = GFX_origin_post_apocalyptic
 
 	starting_colony = pc_nuked
-	initializer = "ancestral_resurgence"
+	initializers = { ancestral_resurgence_1 }
 	max_once_global = yes
 	habitability_preference = "pc_nuked"
 	flags = { ancestral_resurgence_origin }
