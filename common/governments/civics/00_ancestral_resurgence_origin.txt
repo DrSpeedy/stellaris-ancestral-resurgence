@@ -30,6 +30,11 @@ origin_ancestral_resurgence = {
 		trait = trait_survivor
 	}
 
+    modifier = {
+		ship_anomaly_generation_chance_mult = 0.1
+		ship_anomaly_research_speed_mult = 0.2
+    }
+
 	advanced_start = yes
 
 	random_weight = {
