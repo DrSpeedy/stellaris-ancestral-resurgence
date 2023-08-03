@@ -1,5 +1,6 @@
 l_english:
  NAME_AR_System:0 "RenovaCorp Dominion"
+ AR_Origin_Tooltip:5 "Ancestral Resurgence\n- Capital starts as three §HTomb World§s!.\n- Gain the §H$trait_survivor$§! trait, granting:\n     Tomb World Habitability: §G+70%§!\n     Leader Lifespan: §G+10§! Years"
  NAME_AR_STAR:0 "Nova"
  NAME_AR_HOMEWORLD:0 "RenovaCorp"
  NAME_Home:0 "Alpha"
