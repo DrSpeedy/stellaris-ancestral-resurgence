@@ -24,7 +24,7 @@ origin_ancestral_resurgence = {
 		}
 	}
 
-	description = "AR_Origin_Tooltip"
+	description = "origin_ancestral_resurgence_tooltip"
 
 	traits = {
 		trait = trait_survivor
