@@ -1,7 +1,7 @@
 origin_ancestral_resurgence = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/ancestral_resurgence.dds"
-	picture = GFX_origin_post_apocalyptic
+	picture = GFX_origin_ancestral_resurgence
 
 	starting_colony = pc_nuked
 	initializers = { ancestral_resurgence_1 }
