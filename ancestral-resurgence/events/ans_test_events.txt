@@ -14,7 +14,7 @@ planet_event = {
     }
 
     triggers = {
-        ownere = {
+        owner = {
             has_origin = origin_ancestral_resurgence
         }
     }
@@ -26,17 +26,6 @@ planet_event = {
             add_research_option = tech_robomodding
             add_research_option = tech_habitat_1
         }
- 	}
-}
-
-planet_event = {
- 	id = henrik.32
- 	hide_window = yes
-
- 	trigger = { always = no }
-
- 	immediate = {
- 		add_planet_devastation = 1
  	}
 }
 

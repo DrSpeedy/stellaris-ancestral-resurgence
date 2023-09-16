@@ -1,8 +1,8 @@
 ﻿l_english:
  origin_ancestral_resurgence:0 "Ancestral Resurgence"
- origin_ancestral_resurgence_desc:0 "This civilization inhabits a Ring World built by unknown forerunners. If it can be understood and fully repaired it will grant them great power."
+ origin_ancestral_resurgence_desc:0 "Baptized by nuclear fire, this civilization has faced total annihilation - and survived. Devastated yet unbroken, they have rebuilt civilization from the ashes of the old world."
  NAME_AR_System:0 "RenovaCorp Dominion"
- origin_ancestral_resurgence_tooltip:0 "Ancestral Resurgence\n- Capital starts as three §HTomb World§s!.\n- Gain the §H$trait_survivor$§! trait, granting:\n     Tomb World Habitability: §G+70%§!\n     Leader Lifespan: §G+10§! Years"
+ origin_ancestral_resurgence_tooltip:0 "- Capital starts as a §HTomb World§!.\n- Starting system includes aditional Tomb Worlds\n- Starting system includes three ruined Megastructures\n- Gain the §H$trait_survivor$§! trait, granting:\n     Tomb World Habitability: §G+70%§!\n     Leader Lifespan: §G+10§! Years\n- Start with §HRobotic Workers§ researched\n- §RTomb World habitability preference§\n"
  NAME_AR_STAR:0 "Nova"
  NAME_AR_HOMEWORLD:0 "RenovaCorp"
  NAME_Home:0 "Alpha"

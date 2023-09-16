@@ -11,6 +11,7 @@ origin_ancestral_resurgence = {
 
 	playable = {
 		host_has_dlc = "Apocalypse"
+        host_has_dlc = "Utopia"
 	}
 
 	possible = {
