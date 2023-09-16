@@ -1,20 +1,20 @@
 @base_moon_distance = 10
 
 ancestral_resurgence_1 = {
-    name = "NAME_AR_System"
+    name = "Nova System"
     class = "sc_b"
     flags = { empire_home_system ancestral_resurgence_system }
     usage = custom_empire
 
-	#init_effect = {
-    #    every_neighbor_system = {
-	#		set_star_flag = empire_cluster
-	#		every_neighbor_system = {
-	#			set_star_flag = empire_cluster
-	#		}
-	#	}
-	#	generate_home_system_resources = yes
-	#}
+	init_effect = {
+        	every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
