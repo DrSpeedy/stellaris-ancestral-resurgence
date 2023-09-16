@@ -1,0 +1,26 @@
+#namespace ancestral_resurgence
+
+#planet_event = {
+#	id = ancestral_resurgence.1
+#	is_triggered_only = yes
+#	hide_window = no
+#	pre_triggers = {
+#        	has_owner = yes
+#    	}
+#
+#	immediate = {
+#
+#        owner = {
+#            give_technology = { message = no tech = tech_powered_exoskeletons }
+#            give_technology = { message = no tech = tech_tech_robotic_workers }
+#            add_research_option = tech_robomodding
+#            add_research_option = tech_habitat_1
+#        }
+        #if = {
+        #    limit = {
+        #        has_origin = origin_ancestral_resurgence
+        #    }
+        #}
+#	}
+#}
+
