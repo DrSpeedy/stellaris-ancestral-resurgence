@@ -1,0 +1,40 @@
+# This is called in initializers for all standard empires, before the empire actually exists
+generate_empire_home_planet = {
+}
+
+# This is called after game start
+generate_start_deposits_and_blockers = {
+	# blockers
+	if = {
+		limit = {
+			owner = {
+				has_origin = origin_ancestral_resurgence
+			}
+		}
+		add_deposit = d_tomb_world_ruins
+		add_deposit = d_tomb_world_wasteland
+	}
+
+	if = {
+		limit = {
+			owner = {
+				has_origin = origin_ancestral_resurgence
+			}
+		}
+
+		# 3 + 3 energy
+		add_deposit = d_hot_springs
+		add_deposit = d_searing_desert
+		add_deposit = d_underwater_vent
+
+		# 3 + 4 mining
+		add_deposit = d_veiny_cliffs
+		add_deposit = d_ore_rich_caverns
+		add_deposit = d_submerged_ore_veins
+
+		# 3 + 2 farming
+		add_deposit = d_lichen_fields
+		add_deposit = d_fungal_caves
+		add_deposit = d_fungal_forest
+	}
+}
