@@ -52,36 +52,6 @@ ancestral_resurgence_1 = {
 		}
     }
 
-    # Damaged gateway
-    init_effect = {
-		spawn_megastructure = {
-			type = "gateway_ruined"
-			random_pos = yes
-			orbit_angle = 360		# range of the randomization
-		}
-	}
-
-    # Damaged megashipyard
-    init_effect = {
-		spawn_megastructure = {
-			type = "mega_shipyard_ruined"
-			planet = star
-
-			init_effect = {
-				create_ambient_object = {
-					type = "large_debris_object"
-					location = this
-				}
-				last_created_ambient_object = {
-					set_location = {
-						target = prev
-						distance = 20
-						angle = 20
-					}
-				}
-			}
-		}
-	}
 
     # Damaged ring world
     change_orbit = 45
@@ -93,17 +63,7 @@ ancestral_resurgence_1 = {
 		}
 		spawn_megastructure = {
 			type = "ring_world_ruined"
-			orbit_angle = 90
-			orbit_distance = 45
-		}
-		spawn_megastructure = {
-			type = "ring_world_ruined"
 			orbit_angle = 180
-			orbit_distance = 45
-		}
-		spawn_megastructure = {
-			type = "ring_world_ruined"
-			orbit_angle = 270
 			orbit_distance = 45
 		}
 
@@ -138,6 +98,80 @@ ancestral_resurgence_1 = {
 		}
 	}
 
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_Ring_Section"
+		orbit_angle = 240
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_Ring_Section"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_shattered_ring_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		flags = { ignore_startup_effect megastructure }
+		init_effect = {
+			prevent_anomaly = no
+			
+			add_deposit = d_segment_rubble_1
+			add_deposit = d_segment_rubble_2
+			add_deposit = d_segment_rubble_3
+			add_deposit = d_segment_rubble_4
+			add_deposit = d_decrepit_tunnels_1
+			add_deposit = d_decrepit_tunnels_1
+			add_deposit = d_decrepit_tunnels_1
+			add_deposit = d_decrepit_tunnels_1
+			add_deposit = d_decrepit_tunnels_1
+			add_deposit = d_decrepit_tunnels_1
+		}
+	}
+
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		name = "NAME_Ring_Section"
+		orbit_angle = 120
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		name = "NAME_Irreparable_Damage"
+		orbit_angle = 30
+		orbit_distance = 0
+		flags = { ignore_startup_effect starting_mining_target starting_deposit}
+
+		init_effect = {
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = -15
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = 0
+				}
+			}
+			set_deposit = d_engineering_5
+			set_planet_flag = starting_research_target
+			set_planet_flag = starting_deposit
+		}
+	}
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		name = "NAME_Ring_Section"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+
     planet = {
 		name = "NAME_The_Fragment"
 		class = "pc_shattered"
@@ -145,16 +179,21 @@ ancestral_resurgence_1 = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 17
 		has_ring = no
+		flags = { ignore_startup_effect starting_mining_target starting_deposit}
+		init_effect = {
+			set_deposit = d_minerals_10
+		}
 	}
 
+
+	# -----
     planet = {
 		name = "NAME_Home"
-		class = "pc_relic"
+		class = "pc_nuked"
 		orbit_distance = 25
         orbit_angle = { min = 90 max = 270 }
 		size = { min = 22 max = 26 }
 		starting_planet = yes
-        class = "pc_relic"
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
@@ -215,6 +254,7 @@ ancestral_resurgence_1 = {
 		count = 2
         class = "pc_nuked"
         orbit_angle = { min = 90 max = 270 }
+		size = { min = 22 max = 26 }
 		orbit_distance = 20
 		change_orbit = @base_moon_distance
 
@@ -286,6 +326,14 @@ ancestral_resurgence_1 = {
 
     planet = {
 		count = { min = 2 max = 5 }
+		size = { min = 12 max = 18 }
 		orbit_distance = 20
+		class = "pc_frozen"
+		init_effect = {
+            add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+        }
 	}
 }
