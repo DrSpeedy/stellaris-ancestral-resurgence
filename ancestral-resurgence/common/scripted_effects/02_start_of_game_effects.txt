@@ -36,5 +36,8 @@ generate_start_deposits_and_blockers = {
 		add_deposit = d_lichen_fields
 		add_deposit = d_fungal_caves
 		add_deposit = d_fungal_forest
+
+		#
+		add_deposit = d_industrial_wasteland
 	}
 }

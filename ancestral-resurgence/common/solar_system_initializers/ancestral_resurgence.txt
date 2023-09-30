@@ -2,7 +2,7 @@
 
 ancestral_resurgence_1 = {
     name = "Nova System"
-    class = "sc_b"
+    class = "sc_f"
     flags = { empire_home_system ancestral_resurgence_system }
     usage = custom_empire
 
@@ -28,28 +28,28 @@ ancestral_resurgence_1 = {
 
     planet = {
         name = "Nova"
-        class = "pc_b_star"
+        class = "pc_f_star"
         orbit_distance = 0
         orbit_angle = 1
-        size = 25
+        size = 40
         has_ring = no
         
         # Nebula
-        init_effect = {
-		    create_ambient_object = {
-			    type = "nebula_L3_entity"
-				entity_offset_height = -5 # Set to spawn far below the planets
-				location = this
-			}
-
-			last_created_ambient_object = {
-				set_location = {
-					target = prev
-					distance = 0
-					angle = random
-				}
-			}
-		}
+        #init_effect = {
+		#    create_ambient_object = {
+		#	    type = "nebula_L3_entity"
+		#		entity_offset_height = -5 # Set to spawn far below the planets
+		#		location = this
+		#	}
+#
+		#	last_created_ambient_object = {
+		#		set_location = {
+		#			target = prev
+		#			distance = 0
+		#			angle = random
+		#		}
+		#	}
+		#}
     }
 
 
@@ -113,23 +113,17 @@ ancestral_resurgence_1 = {
 	}
 
 	planet = {
-		class = "pc_shattered_ring_habitable"
+		class = "pc_ringworld_habitable"
 		orbit_angle = 30
 		orbit_distance = 0
 		flags = { ignore_startup_effect megastructure }
 		init_effect = {
 			prevent_anomaly = no
-			
 			add_deposit = d_segment_rubble_1
 			add_deposit = d_segment_rubble_2
-			add_deposit = d_segment_rubble_3
-			add_deposit = d_segment_rubble_4
 			add_deposit = d_decrepit_tunnels_1
-			add_deposit = d_decrepit_tunnels_1
-			add_deposit = d_decrepit_tunnels_1
-			add_deposit = d_decrepit_tunnels_1
-			add_deposit = d_decrepit_tunnels_1
-			add_deposit = d_decrepit_tunnels_1
+			add_deposit = d_malfunctioning_reactor
+			add_deposit = d_collapsed_spire
 		}
 	}
 
@@ -160,7 +154,6 @@ ancestral_resurgence_1 = {
 					angle = 0
 				}
 			}
-			set_deposit = d_engineering_5
 			set_planet_flag = starting_research_target
 			set_planet_flag = starting_deposit
 		}
@@ -173,7 +166,7 @@ ancestral_resurgence_1 = {
 	}
 
     planet = {
-		name = "NAME_The_Fragment"
+		name = "Fragmented World"
 		class = "pc_shattered"
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
@@ -201,6 +194,10 @@ ancestral_resurgence_1 = {
 		init_effect = {
 			prevent_anomaly = yes
             generate_empire_home_planet = yes
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
 		}
 
 		moon = {
@@ -221,6 +218,9 @@ ancestral_resurgence_1 = {
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		init_effect = {
+			add_deposit = d_exotic_gases_2
+		}
 	}
 
 	planet = {
@@ -251,12 +251,13 @@ ancestral_resurgence_1 = {
 	}
 
     planet = {
-		count = 2
         class = "pc_nuked"
+
         orbit_angle = { min = 90 max = 270 }
 		size = { min = 22 max = 26 }
 		orbit_distance = 20
 		change_orbit = @base_moon_distance
+		has_ring = no
 
 		moon = {
 			count = { min = 0 max = 1 }
@@ -264,7 +265,43 @@ ancestral_resurgence_1 = {
 		}
 
         init_effect = {
-            add_modifier = {
+			add_deposit = d_irradiated_ruins
+			add_deposit = d_ancient_battlefield
+			add_deposit = d_ancient_bombardment_craters
+			add_deposit = d_ancient_particle_accelerator
+			add_deposit = d_bomb_crater
+			add_deposit = d_city_ruins
+			add_deposit = d_city_ruins
+			add_deposit = d_radioactive_wasteland
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+        }
+	}
+
+	planet = {
+        class = "pc_nuked"
+
+        orbit_angle = { min = 90 max = 270 }
+		size = { min = 22 max = 26 }
+		orbit_distance = 20
+		change_orbit = @base_moon_distance
+		has_ring = no
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_distance = 5
+		}
+
+        init_effect = {
+			add_deposit = d_irradiated_ruins
+			add_deposit = d_ancient_mining_site
+			add_deposit = d_dangerous_wildlife_blocker
+			add_deposit = d_city_ruins
+			add_deposit = d_radioactive_wasteland
+			add_deposit = d_tomb_world_ruins
+			add_modifier = {
 				modifier = "terraforming_candidate"
 				days = -1
 			}
@@ -275,14 +312,14 @@ ancestral_resurgence_1 = {
 		class = "pc_gas_giant"
 		orbit_distance = 25
 		orbit_angle = { min = 90 max = 270 }
-		size = 26
+		size = 36
 		has_ring = yes
 		change_orbit = 4
 
 		moon = {
 			class = "pc_frozen"
-			size = 6
-			orbit_distance = 11
+			size = 10
+			orbit_distance = 17
 			orbit_angle = 115
 			has_ring = no
 		}
