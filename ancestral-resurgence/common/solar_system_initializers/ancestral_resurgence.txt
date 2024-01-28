@@ -13,7 +13,7 @@ ancestral_resurgence_1 = {
 				set_star_flag = empire_cluster
 			}
 		}
-		generate_home_system_resources = yes
+		generate_home_system_resources = no
 	}
 
 	asteroid_belt = {
