@@ -27,10 +27,10 @@ planet_event = {
 			owner = {
 				give_technology = { message = no tech = tech_powered_exoskeletons }
 				give_technology = { message = no tech = tech_robotic_workers }
-				give_technology = { message = no tech = tech_habitat_1 }
+				give_technology = { message = no tech = tech_penal_colonies }
 				add_research_option = tech_robomodding
 				add_research_option = tech_droid_workers
-				add_research_option = tech_habitat_2
+				add_research_option = tech_habitat_1
 				add_research_option = tech_sapient_ai
 			}
 		}

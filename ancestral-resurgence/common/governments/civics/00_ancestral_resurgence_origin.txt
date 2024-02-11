@@ -34,6 +34,8 @@ origin_ancestral_resurgence = {
     modifier = {
 		ship_anomaly_generation_chance_mult = 0.1
 		ship_anomaly_research_speed_mult = 0.2
+		planet_pop_assembly_mult = 0.15
+		ROBOT_species_trait_picks_add = 1
     }
 
 	advanced_start = yes
