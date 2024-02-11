@@ -5,12 +5,6 @@ As the player takes control of the remnants of the fallen empire, they inherit a
 
 ---
 
-#### Species:
-* All
-
-#### Traits:
-* None
-
 #### Climate Preference:
 * Desert
 
