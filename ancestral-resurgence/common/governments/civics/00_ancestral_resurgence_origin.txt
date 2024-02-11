@@ -42,7 +42,7 @@ origin_ancestral_resurgence = {
 
 		# Cave dweller
 		planet_jobs_minerals_produces_mult = 0.15
-		species_empire_size_mult = 0.05
+		#species_empire_size_mult = 0.05
 		mining_district_housing_add = 2
 		mining_district_buildings_add = 0.34
 		planet_orbital_bombardment_damage = -0.75

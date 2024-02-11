@@ -15,6 +15,7 @@ As the player takes control of the remnants of the fallen empire, they inherit a
     - Robotic Workers
     - Penial Colony
 * Researchable at start:
+    - Positronic AI
     - Droids
     - Robo-Modeling
     - Habitat I
@@ -39,7 +40,6 @@ As the player takes control of the remnants of the fallen empire, they inherit a
 | Robot assembly speed | +15% |
 | Robot trait points | +1 |
 | Minerals from jobs | +15% |
-| Empire size from species pops | +5% |
 | Housing from mining districts | +2 |
 | Building slots from mining districts | +34% |
 | Damage receiving orbital bombardment | -75% |
