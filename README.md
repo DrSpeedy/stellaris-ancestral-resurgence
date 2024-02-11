@@ -1,36 +1,55 @@
-## Stellaris: Ancestral Resurgence (OP Start for "Tall" Players)
+## Stellaris: Ancestral Resurgence v2.0-dev
 
 ### Summary:
 As the player takes control of the remnants of the fallen empire, they inherit a rich history of hubris and destruction. Now, with the scars of the past serving as a reminder, they must forge a new path for their species. Whether they will mend their species with technology and ascend to new heights or succumb to the same mistakes remains to be seen. It's a challenging journey of redemption, survival, and conquest in a galaxy teeming with opportunities and dangers.
 
 ---
 
-#### Traits:
-* Survivor
-
 #### Climate Preference:
-* Post Apocalyptic
+* Desert
 
 #### Technology:
 * Starting:
     - All default
     - Powered Exoskeletons
     - Robotic Workers
+    - Penial Colony
 * Researchable at start:
+    - Droids
     - Robo-Modeling
     - Habitat I
 
 #### Starting System:
 * Mega-Structures:
-    - 4x Ruinied Ring-World Segments
-    - Ruined Gateway
-    - Ruined Mega-Shipyard
+    - Custom Shattered Ringworld
 * Planets:
-    - 1x Shattered World
-    - 3x Habitable Tomb Worlds
+    - 1x Habitable Moon
+    - 1x Uninhabitable Shattered-Ring (Blocker)
+    - 1x Uninhabitable Planet (Blocker)
     - 8x Named Astroid/Commets
-    - 1x Named Gas Giant
-    - 2-5x Random Planets
+    - 2x Named Gas Giant
+    - 1x Moon that can be terraformed
+    - 1x Planet that can be terraformed
+
+#### Origin Modifiers:
+| Modifier | Value |
+| --- | --- |
+| Anomaly discovery | +30% |
+| Anomaly research speed | +20% |
+| Robot assembly speed | +15% |
+| Robot trait points | +1 |
+| Minerals from jobs | +15% |
+| Empire size from species pops | +5% |
+| Housing from mining districts | +2 |
+| Building slots from mining districts | +34% |
+| Damage receiving orbital bombardment | -75% |
+| Planet building speed | -10% |
+| Empire size from colonies | +100% |
+| Empire size from branch-offices | +100% |
+| Empire size from all pops | -50% |
+| Empire size from districts | -50% |
+| Diplomatic weight | +20% |
+| Leader lifespan | +10 years |
 
 ---
 

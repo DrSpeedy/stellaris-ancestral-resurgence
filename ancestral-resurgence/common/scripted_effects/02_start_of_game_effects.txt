@@ -4,23 +4,21 @@ generate_empire_home_planet = {
 
 # This is called after game start
 generate_start_deposits_and_blockers = {
-	# blockers
 	if = {
 		limit = {
 			owner = {
 				has_origin = origin_ancestral_resurgence
 			}
 		}
-		add_deposit = d_tomb_world_ruins
-		add_deposit = d_tomb_world_wasteland
-	}
 
-	if = {
-		limit = {
-			owner = {
-				has_origin = origin_ancestral_resurgence
-			}
-		}
+		add_building = building_robot_assembly_plant
+		add_building = building_planetary_shield_generator
+		clear_deposits = yes
+		
+		# blockers
+		#add_deposit = d_tomb_world_ruins
+		#add_deposit = d_tomb_world_wasteland
+		add_deposit = d_industrial_sector
 
 		# 3 + 3 energy
 		add_deposit = d_hot_springs
@@ -29,15 +27,22 @@ generate_start_deposits_and_blockers = {
 
 		# 3 + 4 mining
 		add_deposit = d_veiny_cliffs
+		#add_deposit = d_ore_rich_caverns
+		#add_deposit = d_ore_rich_caverns
+		add_deposit = d_ore_rich_caverns
 		add_deposit = d_ore_rich_caverns
 		add_deposit = d_submerged_ore_veins
 
 		# 3 + 2 farming
 		add_deposit = d_lichen_fields
 		add_deposit = d_fungal_caves
+		add_deposit = d_fungal_caves
 		add_deposit = d_fungal_forest
 
 		#
-		add_deposit = d_industrial_wasteland
+
+		add_modifier = {
+			modifier = hazardous_weather
+		}
 	}
 }

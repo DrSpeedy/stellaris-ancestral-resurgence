@@ -18,12 +18,12 @@ ancestral_resurgence_1 = {
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 130
+		radius = 220 #130
 	}
 
 	asteroid_belt = {
 		type = icy_asteroid_belt
-		radius = 225
+		radius = 410 #225
 	}
 
     planet = {
@@ -33,7 +33,7 @@ ancestral_resurgence_1 = {
         orbit_angle = 1
         size = 40
         has_ring = no
-        
+
         # Nebula
         #init_effect = {
 		#    create_ambient_object = {
@@ -56,6 +56,7 @@ ancestral_resurgence_1 = {
     # Damaged ring world
     change_orbit = 45
     init_effect = {
+
 		spawn_megastructure = {
 			type = "ring_world_ruined"
 			orbit_angle = 0
@@ -113,17 +114,29 @@ ancestral_resurgence_1 = {
 	}
 
 	planet = {
-		class = "pc_ringworld_habitable"
+		class = "pc_ao_ringworld_habitable"
 		orbit_angle = 30
 		orbit_distance = 0
 		flags = { ignore_startup_effect megastructure }
+
 		init_effect = {
 			prevent_anomaly = no
+
 			add_deposit = d_segment_rubble_1
 			add_deposit = d_segment_rubble_2
 			add_deposit = d_decrepit_tunnels_1
-			add_deposit = d_malfunctioning_reactor
 			add_deposit = d_collapsed_spire
+
+			add_deposit = d_malfunctioning_reactor
+			add_deposit = d_sr_vacuum_fields
+			add_deposit = d_sr_ring_gyros
+			add_deposit = d_sr_power_grid
+			add_deposit = d_sr_diurnal_regulator
+
+			add_modifier = {
+				modifier = low_gravity
+				days = -1
+			}
 		}
 	}
 
@@ -158,6 +171,7 @@ ancestral_resurgence_1 = {
 			set_planet_flag = starting_deposit
 		}
 	}
+
 	planet = {
 		class = "pc_ringworld_seam_damaged"
 		name = "NAME_Ring_Section"
@@ -166,105 +180,64 @@ ancestral_resurgence_1 = {
 	}
 
     planet = {
-		name = "Fragmented World"
-		class = "pc_shattered"
+		class = pc_molten
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = 17
+		size = 14
 		has_ring = no
-		flags = { ignore_startup_effect starting_mining_target starting_deposit}
+		flags = { ignore_startup_effect starting_mining_target starting_deposit }
 		init_effect = {
 			set_deposit = d_minerals_10
 		}
 	}
 
+    planet = {
+		class = pc_molten
+
+        orbit_angle = { min = 90 max = 270 }
+		size = { min = 22 max = 26 }
+		orbit_distance = 35
+		change_orbit = @base_moon_distance
+		has_ring = no
+		flags = { ignore_startup_effect }
+
+		init_effect = {
+			add_deposit = d_ao_shattered_planet
+		}
+
+		moon = {
+			class = pc_desert
+			orbit_distance = 8
+			orbit_angle = { min = 90 max = 270 }
+			size = { min = 14 max = 16 }
+			starting_planet = yes
+			has_ring = no
+			deposit_blockers = none
+			#modifiers = none
+
+			init_effect = {
+				prevent_anomaly = yes
+
+				#generate_empire_home_planet = yes
+				#add_modifier = {
+				#	modifier = "terraforming_candidate"
+				#	days = -1
+				#}
+			}
+		}
+	}
 
 	# -----
     planet = {
-		name = "NAME_Home"
-		class = "pc_nuked"
+		#count = { min = 0 max = 1 }
 		orbit_distance = 25
-        orbit_angle = { min = 90 max = 270 }
-		size = { min = 22 max = 26 }
-		starting_planet = yes
-		has_ring = no
-		deposit_blockers = none
-		modifiers = none
+		class = pc_arid
+		size = { min = 22 max = 28 }
+		has_ring = yes
 
 		init_effect = {
-			prevent_anomaly = yes
-            generate_empire_home_planet = yes
-			add_modifier = {
-				modifier = "terraforming_candidate"
-				days = -1
-			}
-		}
+			create_archaeological_site = random
 
-		moon = {
-			name = "NAME_Luna"
-			class = "pc_barren_cold"
-			size = 5
-			orbit_distance = 12
-			orbit_angle = 40
-			has_ring = no
-			entity = "cold_barren_planet_luna_entity"
-		}
-	}
-
-    planet = {
-		name = "NAME_1_Ceres"
-		class = "pc_asteroid"
-		orbit_distance = 30
-		orbit_angle = -210
-		size = 5
-		has_ring = no
-		init_effect = {
-			add_deposit = d_exotic_gases_2
-		}
-	}
-
-	planet = {
-		name = "NAME_2_Pallas"
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -95
-		size = 5
-		has_ring = no
-	}
-
-	planet = {
-		name = "NAME_3_Juno"
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 285
-		size = 5
-		has_ring = no
-	}
-
-	planet = {
-		name = "NAME_4_Vesta"
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -80
-		size = 5
-		has_ring = no
-	}
-
-    planet = {
-        class = "pc_nuked"
-
-        orbit_angle = { min = 90 max = 270 }
-		size = { min = 22 max = 26 }
-		orbit_distance = 20
-		change_orbit = @base_moon_distance
-		has_ring = no
-
-		moon = {
-			count = { min = 0 max = 1 }
-			orbit_distance = 5
-		}
-
-        init_effect = {
 			add_deposit = d_irradiated_ruins
 			add_deposit = d_ancient_battlefield
 			add_deposit = d_ancient_bombardment_craters
@@ -273,44 +246,100 @@ ancestral_resurgence_1 = {
 			add_deposit = d_city_ruins
 			add_deposit = d_city_ruins
 			add_deposit = d_radioactive_wasteland
-			add_modifier = {
-				modifier = "terraforming_candidate"
-				days = -1
-			}
-        }
+
+			add_deposit = d_flooded_reactor_pits # Too OP lol +6 generators on clear
+			add_deposit = d_sr_power_grid # will lower habibility
+			add_deposit = d_ao_malfunctioning_reactor
+			
+			#add_deposit = d_ruined_arcology
+			#add_deposit = d_ruined_arcology
+			#add_deposit = d_ruined_arcology
+		}
+
+		moon = {
+			class = random_non_colonizable
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
 	}
 
 	planet = {
-        class = "pc_nuked"
+        class = pc_barren
 
         orbit_angle = { min = 90 max = 270 }
-		size = { min = 22 max = 26 }
-		orbit_distance = 20
+		size = { min = 27 max = 30 }
+		orbit_distance = 35
 		change_orbit = @base_moon_distance
 		has_ring = no
+		#entity = "barren_planet_mars_entity"
 
 		moon = {
-			count = { min = 0 max = 1 }
+			count = { min = 0 max = 2 }
 			orbit_distance = 5
+			class = random_non_ideal
+			size = { min = 7 max = 11 }
 		}
 
         init_effect = {
-			add_deposit = d_irradiated_ruins
-			add_deposit = d_ancient_mining_site
-			add_deposit = d_dangerous_wildlife_blocker
-			add_deposit = d_city_ruins
-			add_deposit = d_radioactive_wasteland
-			add_deposit = d_tomb_world_ruins
+			#add_deposit = d_irradiated_ruins
+			#add_deposit = d_ancient_mining_site
+			#add_deposit = d_dangerous_wildlife_blocker
+			#add_deposit = d_city_ruins
+			#add_deposit = d_radioactive_wasteland
+			#add_deposit = d_tomb_world_ruins
+
 			add_modifier = {
-				modifier = "terraforming_candidate"
+				modifier = terraforming_candidate
 				days = -1
 			}
         }
 	}
 
     planet = {
+		#name = "NAME_1_Ceres"
+		class = "pc_asteroid"
+		orbit_distance = 50
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		#name = "NAME_2_Pallas"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		#name = "NAME_3_Juno"
+		class = pc_rare_crystal_asteroid
+		flags = { ignore_startup_effect starting_mining_target starting_deposit }
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+		init_effect = {
+			add_deposit = d_rare_crystals_4
+		}
+	}
+
+	planet = {
+		#name = "NAME_4_Vesta"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+
+    planet = {
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 50
 		orbit_angle = { min = 90 max = 270 }
 		size = 36
 		has_ring = yes
@@ -325,17 +354,61 @@ ancestral_resurgence_1 = {
 		}
 	}
 
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 60
+		orbit_angle = { min = 90 max = 270 }
+		size = 32
+		has_ring = yes
+		change_orbit = 4
+
+		flags = { ignore_startup_effect starting_mining_target starting_deposit }
+		init_effect = {
+			add_deposit = d_exotic_gases_5
+		}
+
+		moon = {
+			class = pc_barren_cold
+			size = 6
+			orbit_distance = 19
+			orbit_angle = 230
+			has_ring = no
+		}
+
+		moon = {
+			class = pc_frozen
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 72
+			has_ring = no
+			init_effect = {
+				add_modifier = {
+					modifier = terraforming_candidate
+					days = -1
+				}
+			}
+		}
+
+		moon = {
+			class = "pc_barren_cold"
+			size = 9
+			orbit_distance = 12
+			orbit_angle = 120
+			has_ring = no
+		}
+	}
+
     planet = {
-		name = "NAME_134340_Pluto"
-		class = "pc_asteroid"
-		orbit_distance = 30
+		#name = "NAME_134340_Pluto"
+		class = pc_barren_cold
+		orbit_distance = 80
 		orbit_angle = -210
 		size = 5
 		has_ring = no
 	}
 
 	planet = {
-		name = "NAME_136472_Makemake"
+		#name = "NAME_136472_Makemake"
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = -95
@@ -344,7 +417,7 @@ ancestral_resurgence_1 = {
 	}
 
 	planet = {
-		name = "NAME_136108_Haumea"
+		#name = "NAME_136108_Haumea"
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = 285
@@ -353,7 +426,7 @@ ancestral_resurgence_1 = {
 	}
 
 	planet = {
-		name = "NAME_20000_Varuna"
+		#name = "NAME_20000_Varuna"
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = -80
@@ -361,16 +434,4 @@ ancestral_resurgence_1 = {
 		has_ring = no
 	}
 
-    planet = {
-		count = { min = 2 max = 5 }
-		size = { min = 12 max = 18 }
-		orbit_distance = 20
-		class = "pc_frozen"
-		init_effect = {
-            add_modifier = {
-				modifier = "terraforming_candidate"
-				days = -1
-			}
-        }
-	}
 }

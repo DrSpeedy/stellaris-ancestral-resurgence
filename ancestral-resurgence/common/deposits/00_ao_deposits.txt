@@ -1,0 +1,57 @@
+
+d_ao_shattered_planet = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			minerals = 25
+		}	
+	}
+	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_ao_malfunctioning_reactor = {
+	time = 512
+
+	is_for_colonizable = yes
+	icon = d_station_reactor
+	category = deposit_cat_blockers
+
+	potential = {
+		always = no
+	}
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = d_malfunctioning_reactor_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_droid_workers
+				has_technology = tech_power_plant_1
+				has_technology = tech_fusion_power
+			}
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -5
+		planets_energy_produces_mult = 0.5
+		habitability_ceil_add = -0.6
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 2000
+			exotic_gases = 200
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}

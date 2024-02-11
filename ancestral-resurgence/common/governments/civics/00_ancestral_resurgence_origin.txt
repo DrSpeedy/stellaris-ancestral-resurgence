@@ -3,39 +3,62 @@ origin_ancestral_resurgence = {
 	icon = "gfx/interface/icons/origins/origins_ancestral_resurgence.dds"
 	picture = GFX_origin_ancestral_resurgence
 
-	starting_colony = pc_nuked
+	starting_colony = pc_desert
 	initializers = { ancestral_resurgence_1 }
 	max_once_global = yes
-	habitability_preference = "pc_nuked"
+	habitability_preference = pc_desert
 	flags = { ancestral_resurgence_origin }
 
 	playable = {
 		host_has_dlc = "Apocalypse"
         host_has_dlc = "Utopia"
+		host_has_dlc = "Overlord"
 	}
 
-	possible = {
-		civics = {
-			NOT = { value = civic_agrarian_idyll }
-			NOR = {
-				text = civic_tooltip_not_anglers
-				value = civic_anglers
-				value = civic_corporate_anglers
-			}
-		}
-	}
+	#possible = {
+	#	civics = {
+	#		NOT = { value = civic_agrarian_idyll }
+	#		NOR = {
+	#			text = civic_tooltip_not_anglers
+	#			value = civic_anglers
+	#			value = civic_corporate_anglers
+	#		}
+	#	}
+	#}
 
 	description = "origin_ancestral_resurgence_tooltip"
 
-	traits = {
-		trait = trait_survivor
-	}
+	#traits = {
+		#trait = trait_survivor
+		#trait = trait_cave_dweller
+	#}
 
     modifier = {
-		ship_anomaly_generation_chance_mult = 0.1
+		ship_anomaly_generation_chance_mult = 0.3
 		ship_anomaly_research_speed_mult = 0.2
+
 		planet_pop_assembly_mult = 0.15
 		ROBOT_species_trait_picks_add = 1
+
+		# Cave dweller
+		planet_jobs_minerals_produces_mult = 0.15
+		species_empire_size_mult = 0.05
+		mining_district_housing_add = 2
+		mining_district_buildings_add = 0.34
+		planet_orbital_bombardment_damage = -0.75
+		#planet_structures_cost_mult = 0.10
+		#planet_structures_upkeep_mult = 0.10
+		planet_building_build_speed_mult = -0.10
+
+		empire_size_colonies_mult = 1
+		empire_size_branch_office_mult = 1
+		empire_size_pops_mult = -0.5
+		empire_size_districts_mult = -0.5
+		diplo_weight_mult = 0.2
+
+		# Survivor
+		#pc_nuked_habitability = 0.8
+		leader_lifespan_add = 10
     }
 
 	advanced_start = yes
