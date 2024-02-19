@@ -8,3 +8,6 @@
  NAME_Home:0 "Alpha"
  pc_ao_ringworld_habitable:1 "Ring Segment"
  pc_ao_ringworld_habitable_desc:1 "Part of a Ring World, an immense band encircling the system's sun.\nBuilt to allow for numerous artificial habitation zones along its inner span, freed from the restrictions and mundanity of planet-bound, spherical existence."
+ d_ao_malfunctioning_reactor:0 "Malfunctioning Reactor"
+ d_ao_malfunctioning_reactor_desc:0 "The reactor powering the various climate control is malfunctioning. Hazardous weather conditions make it difficult to settle most parts of this planet."
+ d_ao_malfunctioning_reactor_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_fusion_power$, $tech_droid_workers$, $tech_power_plant_1$§!"

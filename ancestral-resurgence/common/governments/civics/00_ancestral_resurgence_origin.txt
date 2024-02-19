@@ -41,24 +41,24 @@ origin_ancestral_resurgence = {
 		ROBOT_species_trait_picks_add = 1
 
 		# Cave dweller
-		planet_jobs_minerals_produces_mult = 0.15
+		#planet_jobs_minerals_produces_mult = 0.15
 		#species_empire_size_mult = 0.05
 		mining_district_housing_add = 2
 		mining_district_buildings_add = 0.34
-		planet_orbital_bombardment_damage = -0.75
+		#planet_orbital_bombardment_damage = -0.75
 		#planet_structures_cost_mult = 0.10
 		#planet_structures_upkeep_mult = 0.10
-		planet_building_build_speed_mult = -0.10
+		planet_building_build_speed_mult = -0.05
 
-		empire_size_colonies_mult = 1
-		empire_size_branch_office_mult = 1
-		empire_size_pops_mult = -0.5
-		empire_size_districts_mult = -0.5
-		diplo_weight_mult = 0.2
+		#empire_size_colonies_mult = 1
+		#empire_size_branch_office_mult = 1
+		#empire_size_pops_mult = -0.5
+		#empire_size_districts_mult = -0.5
+		#diplo_weight_mult = 0.2
 
 		# Survivor
 		#pc_nuked_habitability = 0.8
-		leader_lifespan_add = 10
+		#leader_lifespan_add = 10
     }
 
 	advanced_start = yes

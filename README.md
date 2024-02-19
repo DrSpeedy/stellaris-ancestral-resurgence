@@ -1,7 +1,7 @@
 ## Stellaris: Ancestral Resurgence v2.0-dev
 
 ### Summary:
-As the player takes control of the remnants of the fallen empire, they inherit a rich history of hubris and destruction. Now, with the scars of the past serving as a reminder, they must forge a new path for their species. Whether they will mend their species with technology and ascend to new heights or succumb to the same mistakes remains to be seen. It's a challenging journey of redemption, survival, and conquest in a galaxy teeming with opportunities and dangers.
+Embrace the challenges of Ancestral Resurgence, uncover ancient mysteries, and lead your resilient desert-dwelling civilization to interstellar greatness
 
 ---
 
@@ -26,7 +26,7 @@ As the player takes control of the remnants of the fallen empire, they inherit a
 * Planets:
     - 1x Habitable Moon
     - 1x Uninhabitable Shattered-Ring (Blocker)
-    - 1x Uninhabitable Planet (Blocker)
+    - 1x Uninhabitable Planet w/ Archeology site (Blocker)
     - 8x Named Astroid/Commets
     - 2x Named Gas Giant
     - 1x Moon that can be terraformed
@@ -39,17 +39,8 @@ As the player takes control of the remnants of the fallen empire, they inherit a
 | Anomaly research speed | +20% |
 | Robot assembly speed | +15% |
 | Robot trait points | +1 |
-| Minerals from jobs | +15% |
 | Housing from mining districts | +2 |
 | Building slots from mining districts | +34% |
-| Damage receiving orbital bombardment | -75% |
-| Planet building speed | -10% |
-| Empire size from colonies | +100% |
-| Empire size from branch-offices | +100% |
-| Empire size from all pops | -50% |
-| Empire size from districts | -50% |
-| Diplomatic weight | +20% |
-| Leader lifespan | +10 years |
 
 ---
 
