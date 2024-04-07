@@ -231,29 +231,46 @@ ancestral_resurgence_1 = {
     planet = {
 		#count = { min = 0 max = 1 }
 		orbit_distance = 25
-		class = pc_arid
-		size = { min = 22 max = 28 }
+		class = pc_desert
+		size = { min = 25 max = 30 }
 		has_ring = yes
 
 		init_effect = {
 			create_archaeological_site = random
 
-			add_deposit = d_irradiated_ruins
-			add_deposit = d_ancient_battlefield
-			add_deposit = d_ancient_bombardment_craters
-			add_deposit = d_ancient_particle_accelerator
-			add_deposit = d_bomb_crater
-			add_deposit = d_city_ruins
-			add_deposit = d_city_ruins
-			add_deposit = d_radioactive_wasteland
+			clear_deposits = yes
 
+			add_deposit = d_shattered_solar_array
+			add_deposit = d_shattered_solar_array
+			add_deposit = d_shattered_solar_array
+			add_deposit = d_searing_desert
+			add_deposit = d_searing_desert
+
+			#add_deposit = d_irradiated_ruins
+			#add_deposit = d_ancient_battlefield
+			#add_deposit = d_ancient_bombardment_craters
+			#add_deposit = d_ancient_particle_accelerator
+			add_deposit = d_bomb_crater
+			#add_deposit = d_city_ruins
+			#add_deposit = d_city_ruins
+			
+			#add_deposit = d_radioactive_wasteland
+			add_deposit = d_deep_sinkhole
+			add_deposit = d_mountain_range
+			add_deposit = d_dangerous_wildlife_blocker
 			add_deposit = d_flooded_reactor_pits # Too OP lol +6 generators on clear
 			add_deposit = d_sr_power_grid # will lower habibility
-			add_deposit = d_ao_malfunctioning_reactor
+			#add_deposit = d_ao_malfunctioning_reactor
+			#add_deposit = d_crashed_slaver_ship
+			#add_deposit = d_freeports
 			
 			#add_deposit = d_ruined_arcology
 			#add_deposit = d_ruined_arcology
 			#add_deposit = d_ruined_arcology
+
+			add_modifier = {
+				modifier = hazardous_weather
+			}
 		}
 
 		moon = {
@@ -283,6 +300,7 @@ ancestral_resurgence_1 = {
 		}
 
         init_effect = {
+			create_archaeological_site = random
 			#add_deposit = d_irradiated_ruins
 			#add_deposit = d_ancient_mining_site
 			#add_deposit = d_dangerous_wildlife_blocker

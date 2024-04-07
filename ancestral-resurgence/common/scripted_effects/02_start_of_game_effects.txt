@@ -12,37 +12,40 @@ generate_start_deposits_and_blockers = {
 		}
 
 		add_building = building_robot_assembly_plant
-		add_building = building_planetary_shield_generator
+		#add_building = building_planetary_shield_generator
 		clear_deposits = yes
 		
 		# blockers
 		#add_deposit = d_tomb_world_ruins
 		#add_deposit = d_tomb_world_wasteland
 		add_deposit = d_industrial_sector
+		add_deposit = d_collapsed_spire
+		add_deposit = d_quicksand_basin
+		add_deposit =  d_massive_crevice
 
 		# 3 + 3 energy
 		add_deposit = d_hot_springs
-		add_deposit = d_searing_desert
-		add_deposit = d_underwater_vent
+		#add_deposit = d_searing_desert
+		#add_deposit = d_underwater_vent
 
 		# 3 + 4 mining
 		add_deposit = d_veiny_cliffs
+		add_deposit = d_ore_rich_caverns
 		#add_deposit = d_ore_rich_caverns
 		#add_deposit = d_ore_rich_caverns
-		add_deposit = d_ore_rich_caverns
-		add_deposit = d_ore_rich_caverns
+		#add_deposit = d_ore_rich_caverns
 		add_deposit = d_submerged_ore_veins
 
 		# 3 + 2 farming
-		add_deposit = d_lichen_fields
+		#add_deposit = d_lichen_fields
+		add_deposit = d_black_soil
 		add_deposit = d_fungal_caves
-		add_deposit = d_fungal_caves
-		add_deposit = d_fungal_forest
+		#add_deposit = d_fungal_forest
 
 		#
+		add_deposit = d_freeports
+		add_deposit = d_dust_caverns
+		add_deposit = d_dust_desert
 
-		add_modifier = {
-			modifier = hazardous_weather
-		}
 	}
 }

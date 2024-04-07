@@ -1,0 +1,33 @@
+namespace = arorigin
+planet_event = {
+	id = arorigin.1
+    is_triggered_only = yes
+	hide_window = yes
+    pre_triggers = {
+        has_owner = yes
+    }
+
+    triggers = {
+        owner = {
+            has_origin = origin_ancestral_resurgence
+        }
+    }
+
+	immediate = {
+		if = {
+			limit = {
+				owner = { has_origin = origin_ancestral_resurgence }
+			}
+			owner = {
+				give_technology = { message = no tech = tech_powered_exoskeletons }
+				give_technology = { message = no tech = tech_robotic_workers }
+				give_technology = { message = no tech = tech_penal_colonies }
+				give_technology = { message = no tech = tech_resort_colonies }
+				add_research_option = tech_robomodding
+				add_research_option = tech_droid_workers
+				add_research_option = tech_habitat_1
+				add_research_option = tech_sapient_ai
+			}
+		}
+ 	}
+}
